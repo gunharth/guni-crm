@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Customer;
 use Laravel\Nova\Actions\Actionable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;

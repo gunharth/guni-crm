@@ -25,7 +25,7 @@ class Customer extends Resource
      *
      * @var array
      */
-    public static $with = ['domain'];
+    // public static $with = ['domains'];
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -58,9 +58,9 @@ class Customer extends Resource
 
             $this->addressFields(),
 
-            new Panel('Domains', [
-                HasMany::make('Domains'),
-            ]),
+            // new Panel('Domains', [
+                HasMany::make('Domains')
+            // ]),
         ];
     }
 
