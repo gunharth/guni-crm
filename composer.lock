@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "048894b5786b7a8040ca1c8763a7ac96",
+    "content-hash": "90890e3591e4f1c050e4288c855d0699",
     "packages": [
         {
             "name": "cakephp/chronos",
@@ -62,6 +62,57 @@
                 "time"
             ],
             "time": "2019-02-11T02:08:31+00:00"
+        },
+        {
+            "name": "causelabs/resource-index-link",
+            "version": "v1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/causelabs/resource-index-link.git",
+                "reference": "688fcc124c96b8c4a72b1a0fa3a416fcf1d4715c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/causelabs/resource-index-link/zipball/688fcc124c96b8c4a72b1a0fa3a416fcf1d4715c",
+                "reference": "688fcc124c96b8c4a72b1a0fa3a416fcf1d4715c",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": "*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Causelabs\\ResourceIndexLink\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Causelabs\\ResourceIndexLink\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rick Sharp",
+                    "email": "rick@causelabs.com",
+                    "homepage": "http://www.causelabs.com",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "A Laravel Nova Resource Index Link field.",
+            "keywords": [
+                "laravel",
+                "link",
+                "nova"
+            ],
+            "time": "2019-01-17T20:23:17+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",

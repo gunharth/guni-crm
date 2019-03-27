@@ -10,6 +10,7 @@ use Laravel\Nova\Fields\Place;
 use Laravel\Nova\Fields\Country;
 use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Causelabs\ResourceIndexLink\ResourceIndexLink;
 
 class Customer extends Resource
 {
@@ -54,7 +55,7 @@ class Customer extends Resource
         return [
             ID::make()->sortable(),
 
-            Text::make('Name')->sortable(),
+            ResourceIndexLink::make('Name')->sortable(),
 
             $this->addressFields(),
 
